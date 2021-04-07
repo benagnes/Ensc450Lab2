@@ -1,0 +1,9 @@
+* Measurements ***************************************
+.meas tran tpd trig v(a_fall)    val='pwr*0.5' cross=1
++              targ v(z)         val='pwr*0.5' cross=1 
+
+.meas tran ttr trig v(z)         val='pwr*0.2' rise=1
++              targ v(z)         val='pwr*0.8' rise=1 
+
+******************************************************
+

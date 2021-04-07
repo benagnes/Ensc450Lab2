@@ -1,0 +1,39 @@
+.alter nor_x1_a_fall_2
+Xnor_x1_a_fall  a_rise   gnd   z    vdd vdds gnd gnds nr    ds=1
+.param Cload=2fF
+
+.alter nor_x1_a_fall_10
+.param Cload=10fF
+
+
+
+.alter nor_x4_a_fall_2
+Xnor_x4_a_fall  a_rise   gnd   z    vdd vdds gnd gnds nr    ds=4
+.param Cload=2fF
+
+.alter nor_x4_a_fall_10
+.param Cload=10fF
+
+
+
+
+
+.alter nor_x1_b_fall_2
+Xnor_x1_b_fall  gnd   a_rise   z    vdd vdds gnd gnds nr    ds=1
+.param Cload=2fF
+
+.alter nor_x1_b_fall_10
+.param Cload=10fF
+
+
+
+.alter nor_x4_b_fall_2
+Xnor_x4_b_fall  gnd   a_rise   z    vdd vdds gnd gnds nr    ds=4
+.param Cload=2fF
+
+.alter nor_x4_b_fall_10
+.param Cload=10fF
+
+
+
+.end

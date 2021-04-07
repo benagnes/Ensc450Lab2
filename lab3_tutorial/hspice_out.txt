@@ -1,0 +1,108 @@
+Using: /usr/bin/time -p /Lnx_STC/tools/synopsys/hspice_vD-2010.03-SP2/hspice/linux/hspice inv_schem.cir
+ ****** HSPICE -- D-2010.03-SP2 32-BIT (Aug 26 2010) linux ******               
+  Copyright (C) 2010 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the 
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the 
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: inv_schem.cir                                                     
+ lic:  
+ lic: FLEXlm: v10.8 
+ lic: USER:   escmc38              HOSTNAME: ensc-esil-03 
+ lic: HOSTID:                      PID:      13348 
+ lic: Using FLEXlm license file: 
+ lic: 6053@142.58.21.5 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 21-aug-2021/2020.03 
+ lic: 1(in_use)/500(total) FLOATING license(s) on SERVER 142.58.21.5 
+ lic:   
+ Init: read login configuration file: /net/home/escmc38/meta.cfg
+  **warning** (inv_schem.cir:12) Both nodes of element vgnd are connected together; Line ignored.
+  **info** (inv_schem.cir:29) DC voltage reset to initial transient source value              in source        0:va                  new dc=  0.0000D+00
+ 
+
+ 
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2         
+1****** HSPICE -- D-2010.03-SP2 32-BIT (Aug 26 2010) linux ******               
+ ******  
+ * hspice deck
+
+  ******  operating point information tnom=  25.000 temp=  25.000 *****
+ ***** operating point status is voltage   simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:a       =   0.      0:vdd!    =   1.2000  0:z       =   1.2000 
+
+ ******  
+ * hspice deck
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+   avg_pwr=  9.3013E-07  from=  0.0000E+00     to=  4.0000E-08
+   tpdrise=  6.1052E-10  targ=  2.0111E-08   trig=  1.9500E-08
+   tpdfall=  2.9834E-10  targ=  9.7983E-09   trig=  9.5000E-09
+   totrrise=  7.8603E-10  targ=  2.0549E-08   trig=  1.9763E-08
+   totrfall=  3.4132E-10  targ=  9.9422E-09   trig=  9.6009E-09
+
+          ***** job concluded
+1****** HSPICE -- D-2010.03-SP2 32-BIT (Aug 26 2010) linux ******               
+ ******  
+ * hspice deck
+
+  ******  job statistics summary tnom=  25.000 temp=  25.000 *****
+ 
+ 
+ ******  Machine Information  ******
+ CPU:
+ model name	: Intel(R) Core(TM) i7-4770S CPU @ 3.10GHz
+ cpu MHz	: 3790.802
+ 
+ OS:
+ Linux version 3.10.0-1127.el7.x86_64 (mockbuild@kbuilder.bsys.centos.org) (gcc 
+ version 4.8.5 20150623 (Red Hat 4.8.5-39) (GCC) ) #1 SMP Tue Mar 31 23:36:51 UT
+ C 2020
+
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count                  :     1
+  Available CPU Count                         :     8
+  Actual Model Evaluation(Load) Threads Count :     1
+  Actual Solver Threads Count                 :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =       8 # elements   =       5
+  # resistors   =       0 # capacitors =       1 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       2
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =       2 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1           4
+  transient          0.03     4000001         233          93 rev=        18
+  readin             0.02
+  errchk             0.00
+  setup              0.00
+  output             0.00
+
+
+           total memory used          323  kbytes
+           total cpu time            0.05 seconds
+           total elapsed time        1.41 seconds
+           job started at     17:15:38 02/28/2021
+           job ended   at     17:15:39 02/28/2021
+
+
+ lic: Release hspice token(s) 

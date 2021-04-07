@@ -1,0 +1,19 @@
+.alter invlay_x1_a_fall_2
+Xinv_x1_a_fall   a_rise   z    vdd vdds gnd gnds ivlay    ds=1
+.param Cload=2fF
+
+.alter invlay_x1_a_fall_10
+.param Cload=10fF
+
+
+
+.alter invlay_x4_a_fall_2
+Xinv_x4_a_fall   a_rise   z    vdd vdds gnd gnds ivlay    ds=4
+.param Cload=2fF
+
+.alter invlay_x4_a_fall_10
+.param Cload=10fF
+
+
+
+.end

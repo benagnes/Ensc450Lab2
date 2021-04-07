@@ -1,0 +1,61 @@
+* worst case: s=1 d0=1 d1=1->0
+
+.alter mux21_x1_a_fall_2
+Xmux21_x1_a_fall_2   a_rise  vdd  gnd   z    vdd vdds gnd gnds mux21    ds=1
+.param Cload=2fF
+
+.alter mux21_x1_a_fall_10
+.param Cload=10fF
+
+
+
+.alter mux21_x4_a_fall_2
+Xmux21_x4_a_fall_2   a_rise  vdd  gnd   z    vdd vdds gnd gnds mux21    ds=4
+.param Cload=2fF
+
+.alter mux21_x4_a_fall_10
+.param Cload=10fF
+
+
+
+
+
+.alter mux21_x1_b_fall_2
+Xmux21_x1_b_fall_2   gnd  a_fall  vdd   z    vdd vdds gnd gnds mux21    ds=1
+.param Cload=2fF
+
+.alter mux21_x1_b_fall_10
+.param Cload=10fF
+
+
+
+.alter mux21_x4_b_fall_2
+Xmux21_x4_b_fall_2   gnd  a_fall  vdd   z    vdd vdds gnd gnds mux21    ds=4
+.param Cload=2fF
+
+.alter mux21_x4_b_fall_10
+.param Cload=10fF
+
+
+
+
+
+.alter mux21_x1_c_fall_2
+Xmux21_x1_c_fall_2   vdd  gnd  a_fall   z    vdd vdds gnd gnds mux21    ds=1
+.param Cload=2fF
+
+.alter mux21_x1_c_fall_10
+.param Cload=10fF
+
+
+
+.alter mux21_x4_c_fall_2
+Xmux21_x4_c_fall_2   vdd  gnd  a_fall   z    vdd vdds gnd gnds mux21    ds=4
+.param Cload=2fF
+
+.alter mux21_x4_c_fall_10
+.param Cload=10fF
+
+
+
+.end

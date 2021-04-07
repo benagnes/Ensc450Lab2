@@ -1,0 +1,39 @@
+.alter xor_x1_a_rise_2
+Xxor_x1_a_rise  a_rise   gnd   z    vdd vdds gnd gnds xr    ds=1
+.param Cload=2fF
+
+.alter xor_x1_a_rise_10
+.param Cload=10fF
+
+
+
+.alter xor_x4_a_rise_2
+Xxor_x4_a_rise  a_rise   gnd   z    vdd vdds gnd gnds xr    ds=4
+.param Cload=2fF
+
+.alter xor_x4_a_rise_10
+.param Cload=10fF
+
+
+
+
+
+.alter xor_x1_b_rise_2
+Xxor_x1_b_rise  gnd   a_rise   z    vdd vdds gnd gnds xr    ds=1
+.param Cload=2fF
+
+.alter xor_x1_b_rise_10
+.param Cload=10fF
+
+
+
+.alter xor_x4_b_rise_2
+Xxor_x4_b_rise  gnd   a_rise   z    vdd vdds gnd gnds xr    ds=4
+.param Cload=2fF
+
+.alter xor_x4_b_rise_10
+.param Cload=10fF
+
+
+
+.end

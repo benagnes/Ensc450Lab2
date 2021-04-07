@@ -1,0 +1,39 @@
+.alter xorlay_x1_a_rise_2
+Xxorlay_x1_a_rise  a_rise   gnd   z    vdd vdds gnd gnds xrlay    ds=1
+.param Cload=2fF
+
+.alter xorlay_x1_a_rise_10
+.param Cload=10fF
+
+
+
+.alter xorlay_x4_a_rise_2
+Xxorlay_x4_a_rise  a_rise   gnd   z    vdd vdds gnd gnds xrlay    ds=4
+.param Cload=2fF
+
+.alter xorlay_x4_a_rise_10
+.param Cload=10fF
+
+
+
+
+
+.alter xorlay_x1_b_rise_2
+Xxorlay_x1_b_rise  gnd   a_rise   z    vdd vdds gnd gnds xrlay    ds=1
+.param Cload=2fF
+
+.alter xorlay_x1_b_rise_10
+.param Cload=10fF
+
+
+
+.alter xorlay_x4_b_rise_2
+Xxorlay_x4_b_rise  gnd   a_rise   z    vdd vdds gnd gnds xrlay    ds=4
+.param Cload=2fF
+
+.alter xorlay_x4_b_rise_10
+.param Cload=10fF
+
+
+
+.end

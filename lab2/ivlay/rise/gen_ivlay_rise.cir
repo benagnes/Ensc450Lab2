@@ -1,0 +1,71 @@
+TestBench Cir File for a Liberty characterization of a Combinational StdCells Library
+
+* Technology Dependent design rules/parameters
+.include /CMC/setups/ensc450/HSPICE/cmosp18/rules.inc
+* Custom User Library
+.option search = "/local-scratch/localhome/escmc38/Desktop/ensc450/HSPICE/lab2"
+
+* Transistor models 
+.protect
+.LIB `/CMC/setups/ensc450/HSPICE/cmosp18/log018.l' SS  $ slow process corner.
+.unprotect
+
+* Supply Sources
+.param pwr=1.05V 
+.temp  125
+* V is voltage source
+* 0 is global ground
+Vvdd  vdd   0 dc pwr
+Vvdds vdds  0 dc pwr
+Vgnd  gnd   0 dc 0
+Vgnds gnds  0 dc 0
+
+* Characterization Parameters
+.param Cload=2fF
+
+* Logic ***********************************************************************
+* Note: All Cells are defined as macro, and their performance is measured here
+
+Cz   z  0   Cload
+
+
+* Input Stimuli (Step response)
+VA_RISE  a_rise  0 PWL(0n 0   '20n-Ttran' 0   20n pwr)
+VA_FALL  a_fall  0 PWL(0n pwr '20n-Ttran' pwr 20n 0)
+
+
+* Simulation Parameters ************************
+.tran 0.01ps 40ns START=0 SWEEP Ttran POI 2 1n 2n
+
+.option post
+
+
+* Measurements ***************************************
+.meas tran tpd trig v(a_fall)    val='pwr*0.5' cross=1
++              targ v(z)         val='pwr*0.5' cross=1 
+
+.meas tran ttr trig v(z)         val='pwr*0.2' rise=1
++              targ v(z)         val='pwr*0.8' rise=1 
+
+******************************************************
+
+
+.alter invlay_x1_a_rise_2
+Xinv_x1_a_rise   a_fall   z    vdd vdds gnd gnds ivlay    ds=1
+.param Cload=2fF
+
+.alter invlay_x1_a_rise_10
+.param Cload=10fF
+
+
+
+.alter invlay_x4_a_rise_2
+Xinv_x4_a_rise   a_fall   z    vdd vdds gnd gnds ivlay    ds=4
+.param Cload=2fF
+
+.alter invlay_x4_a_rise_10
+.param Cload=10fF
+
+
+
+.end

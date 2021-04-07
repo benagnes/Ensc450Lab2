@@ -1,0 +1,39 @@
+.alter nandlay_x1_a_rise_2
+Xnand_x1_a_rise  a_fall   vdd   z    vdd vdds gnd gnds ndlay    ds=1
+.param Cload=2fF
+
+.alter nandlay_x1_a_rise_10
+.param Cload=10fF
+
+
+
+.alter nandlay_x4_a_rise_2
+Xnand_x4_a_rise  a_fall   vdd   z    vdd vdds gnd gnds ndlay    ds=4
+.param Cload=2fF
+
+.alter nandlay_x4_a_rise_10
+.param Cload=10fF
+
+
+
+
+
+.alter nandlay_x1_b_rise_2
+Xnand_x1_b_rise  vdd   a_fall   z    vdd vdds gnd gnds ndlay    ds=1
+.param Cload=2fF
+
+.alter nandlay_x1_b_rise_10
+.param Cload=10fF
+
+
+
+.alter nandlay_x4_b_rise_2
+Xnand_x4_b_rise  vdd   a_fall   z    vdd vdds gnd gnds ndlay    ds=4
+.param Cload=2fF
+
+.alter nandlay_x4_b_rise_10
+.param Cload=10fF
+
+
+
+.end

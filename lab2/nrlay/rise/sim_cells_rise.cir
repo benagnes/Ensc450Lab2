@@ -1,0 +1,39 @@
+.alter norlay_x1_a_rise_2
+Xnor_x1_a_rise  a_fall   gnd   z    vdd vdds gnd gnds nrlay    ds=1
+.param Cload=2fF
+
+.alter norlay_x1_a_rise_10
+.param Cload=10fF
+
+
+
+.alter norlay_x4_a_rise_2
+Xnor_x4_a_rise  a_fall   gnd   z    vdd vdds gnd gnds nrlay    ds=4
+.param Cload=2fF
+
+.alter norlay_x4_a_rise_10
+.param Cload=10fF
+
+
+
+
+
+.alter norlay_x1_b_rise_2
+Xnor_x1_b_rise  gnd   a_fall   z    vdd vdds gnd gnds nrlay    ds=1
+.param Cload=2fF
+
+.alter norlay_x1_b_rise_10
+.param Cload=10fF
+
+
+
+.alter norlay_x4_b_rise_2
+Xnor_x4_b_rise  gnd   a_fall   z    vdd vdds gnd gnds nrlay    ds=4
+.param Cload=2fF
+
+.alter norlay_x4_b_rise_10
+.param Cload=10fF
+
+
+
+.end
